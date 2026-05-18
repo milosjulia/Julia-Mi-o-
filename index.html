@@ -18,15 +18,15 @@
   --muted:   #8A8880;
   --border:  rgba(28,28,26,0.1);
 
-  --coral:   #D4614A;
-  --coral-l: #F2DDD9;
-  --olive:   #6B7A3E;
-  --olive-l: #DDE3C8;
+  --coral:   #e7a89c;
+  --coral-l: #e7a89c;
+  --olive:   #272b1d;
+  --olive-l: #272b1d;
   --burg:    #7A2D3E;
   --burg-l:  #E8D0D5;
 
-  --display: 'Bebas Neue', sans-serif;
-  --body:    'Inter', sans-serif;
+  --display: 'Montserrat', sans-serif;
+  --body:    'Courier New', sans-serif;
   --max:     1200px;
   --ease:    cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -57,7 +57,7 @@ nav.scrolled { background: rgba(242,239,232,0.92); backdrop-filter: blur(12px); 
   overflow: hidden;
 }
 
-.hero-photo { position: relative; overflow: hidden; background: var(--bg2); }
+.hero-photo { background-image: url('P2X01688.JPG'); background-size: cover; background-position: center; }
 .hero-photo-silhouette {
   position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
   width: 62%; height: 82%;
@@ -252,10 +252,9 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
     <div class="hero-photo-overlay"></div>
   </div>
   <div class="hero-content">
-    <span class="hero-tag">Dostępna na praktyki</span>
     <h1 class="hero-title">Portfolio</h1>
     <div class="hero-line"></div>
-    <p class="hero-desc">Projektuję interfejsy, które są proste, intuicyjne i estetyczne. Szukam praktyk w studiu lub firmie produktowej, gdzie dobry design ma znaczenie.</p>
+    <p class="hero-desc">Jestem studentką 3 roku na kierunku Elektroniczne Przetwarzanie Informacji na Uniwersytecie Jagiellońskim w Krakowie.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">Zobacz projekty</a>
       <a href="#about" class="btn-outline">O mnie</a>
@@ -264,23 +263,6 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
   </div>
 </section>
 
-<!-- TICKER -->
-<div class="ticker-wrap">
-  <div class="ticker">
-    <span>UX Design</span><span class="dot">◆</span>
-    <span>UI Design</span><span class="dot">◆</span>
-    <span>Figma</span><span class="dot">◆</span>
-    <span>Prototypowanie</span><span class="dot">◆</span>
-    <span>User Research</span><span class="dot">◆</span>
-    <span>Projektowanie produktów</span><span class="dot">◆</span>
-    <span>UX Design</span><span class="dot">◆</span>
-    <span>UI Design</span><span class="dot">◆</span>
-    <span>Figma</span><span class="dot">◆</span>
-    <span>Prototypowanie</span><span class="dot">◆</span>
-    <span>User Research</span><span class="dot">◆</span>
-    <span>Projektowanie produktów</span><span class="dot">◆</span>
-  </div>
-</div>
 
 <!-- PROJECTS -->
 <section id="projects">
@@ -311,6 +293,27 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
     </div>
   </a>
 
+    <a href="projekt.html" class="project-featured reveal">
+    <div class="project-featured-img">
+      <div class="project-img-inner" style="background: linear-gradient(135deg,#C8A882,#9B7B5A);">SOMA</div>
+    </div>
+    <div class="project-featured-body">
+      <div class="project-num">01</div>
+      <div>
+        <h3 class="project-featured-name">GOODGUT - aplikacja</h3>
+        <p class="project-featured-desc">Celem aplikacji GoodGut jest promowanie świadomej troski o zdrowie fizyczne i psychiczne. Zawarte funkcjonalności pozwalają na ułatwienie rozpoznawania sygnałów, które wysyła organizm (np. zmęczenie, bezsenność, problemy trawienne). Aplikacja promuje zintegrowane podejście do zdrowia – łączenie diety, aktywności
+        fizycznej i dobrostanu psychicznego. GoodGut wyróżnia dostęp do wiedzy ekspertów i możliwość umawiania się na konsultacje ze specjalistami bezpośrednio przez aplikację.</p>
+        <div class="project-tags">
+          <span class="tag coral">UX/UI</span>
+          <span class="tag olive">Mobile</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Blender</span>
+        </div>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+  </a>
+
   <div class="projects-row reveal">
     <a href="projekt.html" class="project-card">
       <div class="project-card-img">
@@ -325,6 +328,7 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
         </div>
       </div>
     </a>
+
     <a href="projekt.html" class="project-card">
       <div class="project-card-img">
         <div class="project-img-inner" style="background: linear-gradient(135deg,#8A4A5A,#6A2A3A);">MyBus</div>
@@ -338,20 +342,7 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
         </div>
       </div>
     </a>
-    <a href="projekt.html" class="project-card">
-      <div class="project-card-img">
-        <div class="project-img-inner" style="background: linear-gradient(135deg,#8A4A5A,#6A2A3A);">GOODGUT</div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-num">04</div>
-        <h3 class="project-card-name">GOODGUT - aplikacja</h3>
-        <p class="project-card-desc">Celem aplikacji GoodGut jest promowanie świadomej troski o zdrowie fizyczne i psychiczne. Zawarte funkcjonalności pozwalają na ułatwienie rozpoznawania sygnałów, które wysyła organizm (np. zmęczenie, bezsenność, problemy trawienne). Aplikacja promuje zintegrowane podejście do zdrowia – łączenie diety, aktywności
-        fizycznej i dobrostanu psychicznego. GoodGut wyróżnia dostęp do wiedzy ekspertów i możliwość umawiania się na konsultacje ze specjalistami bezpośrednio przez aplikację.</p>
-        <div class="project-tags" style="margin-top: 1rem;">
-          <span class="tag burg">Mobile</span><span class="tag">Figma</span>
-        </div>
-      </div>
-    </a>
+    
     <a href="projekt.html" class="project-card">
       <div class="project-card-img">
         <div class="project-img-inner" style="background: linear-gradient(135deg,#8A4A5A,#6A2A3A);">Breath&Balance</div>
@@ -365,6 +356,7 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
         </div>
       </div>
     </a>
+
     <a href="projekt.html" class="project-card">
       <div class="project-card-img">
         <div class="project-img-inner" style="background: linear-gradient(135deg,#8A4A5A,#6A2A3A);">Animacja karuzeli</div>
@@ -374,7 +366,8 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
         <h3 class="project-card-name">Animacja karuzeli</h3>
         <p class="project-card-desc">Krótka animacja cyrkowej karuzeli wykonana w aplikacji Blender.</p>
         <div class="project-tags" style="margin-top: 1rem;">
-          <span class="tag burg">Animacja</span><span class="tag">Blender</span>
+          <span class="tag burg">Animacja</span>
+          <span class="tag">Blender</span>
         </div>
       </div>
     </a>
@@ -385,8 +378,7 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
 <div id="about" style="background: var(--bg2); padding: 7rem 0;">
   <div class="about-inner">
     <div class="about-photo reveal">
-      <div class="about-photo-fill"></div>
-      <span class="about-photo-label">Twoje zdjęcie tutaj</span>
+     <img src="P2X01171.JPG" style="width:100%; height:100%; object-fit:cover; object-position:center top;">
     </div>
     <div class="about-text reveal">
       <p class="section-eyebrow">Kim jestem</p>
@@ -398,6 +390,8 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
         <div class="skill-row"><span class="skill-name">Figma</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
         <div class="skill-row"><span class="skill-name">Prototypowanie</span><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div></div>
         <div class="skill-row"><span class="skill-name">UX Research</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div></div>
+        <div class="skill-row"><span class="skill-name">CorelDraw</span><div class="skill-track"><div class="skill-fill" style="width:90%"></div></div></div>
+        <div class="skill-row"><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div></div>
         <div class="skill-row"><span class="skill-name">Adobe Photoshop</span><div class="skill-track"><div class="skill-fill" style="width:40%"></div></div></div>
         <div class="skill-row"><span class="skill-name">HTML / CSS</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div></div>
       </div>
@@ -410,21 +404,20 @@ footer { border-top: 1px solid var(--border); padding: 2rem 3rem; display: flex;
   <div class="contact-big reveal">Porozmawiajmy<br><span>o współpracy</span></div>
   <div class="contact-grid">
     <div class="contact-left reveal">
-      <p>Szukam praktyk w firmie, która ceni dobry design i stawia użytkownika na pierwszym miejscu. Chętnie porozmawiam o możliwościach.</p>
+      <p>Zapraszam do kontaktu.</p>
       <div class="contact-links">
-        <a href="mailto:anna@example.com" class="contact-link">anna@example.com<span class="arrow">↗</span></a>
-        <a href="https://linkedin.com" class="contact-link" target="_blank">LinkedIn<span class="arrow">↗</span></a>
-        <a href="https://behance.net" class="contact-link" target="_blank">Behance<span class="arrow">↗</span></a>
+        <a href="mailto:milosjulia.o@gmail.com" class="contact-link">milosjulia.o@gmail.com<span class="arrow">↗</span></a>
+        <a href="www.linkedin.com/in/julia-miłoś-8b3b56356" class="contact-link" target="_blank">LinkedIn<span class="arrow">↗</span></a>
         <a href="#" class="contact-link">CV do pobrania<span class="arrow">↓</span></a>
       </div>
     </div>
     <form class="contact-form reveal" id="contactForm">
-      <div class="form-field"><label>Imię i nazwisko</label><input type="text" placeholder="Jan Kowalski" required></div>
-      <div class="form-field"><label>E-mail</label><input type="email" placeholder="jan@firma.pl" required></div>
-      <div class="form-field"><label>Temat</label><select><option value="">Wybierz...</option><option>Propozycja praktyk</option><option>Projekt freelance</option><option>Inne</option></select></div>
-      <div class="form-field"><label>Wiadomość</label><textarea placeholder="Opowiedz mi o swojej firmie..." required></textarea></div>
+      <div class="form-field"><label>Imię i nazwisko</label><input type="text" placeholder="Imię" required></div>
+      <div class="form-field"><label>E-mail</label><input type="email" placeholder="example@mail.pl" required></div>
+      <div class="form-field"><label>Temat</label><input type="text" placeholder="Temat" required></div>
+      <div class="form-field"><label>Wiadomość</label><textarea placeholder="Wiadomość" required></textarea></div>
       <button type="submit" class="btn-send">Wyślij wiadomość</button>
-      <p class="success-msg" id="successMsg">✓ Wiadomość wysłana. Odezwę się wkrótce.</p>
+      <p class="success-msg" id="successMsg">✓ Wiadomość wysłana. Do usłyszenia!</p>
     </form>
   </div>
 </section>
